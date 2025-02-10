@@ -21,7 +21,7 @@
             </div>
             <div class="hidden lg:flex lg:gap-x-12">
                 <a href="/home" class="font-semibold text-gray-700 dark:text-gray-100 text-sm/6">Beranda</a>
-                <a href="/materi" class="font-semibold text-gray-700 dark:text-gray-100 text-sm/6">Materi</a>
+                <a href="/kegiatan" class="font-semibold text-gray-700 dark:text-gray-100 text-sm/6">Kegiatan Kami</a>
                 <a href="/pengajar" class="font-semibold text-gray-700 dark:text-gray-100 text-sm/6">Pengajar</a>
                 <a href="/contact" class="font-semibold text-gray-700 dark:text-gray-100 text-sm/6">Contact</a>
             </div>

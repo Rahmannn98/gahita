@@ -29,15 +29,17 @@
                 </p>
                 <div class="flex items-center justify-center mt-10 gap-x-6 animate-fade-slide">
                     <!-- Tombol Get Started -->
-                    <a href="#" 
-                       class="px-6 py-3 text-sm font-semibold text-white transition-all duration-300 bg-indigo-600 rounded-md shadow-lg hover:bg-indigo-500 hover:-translate-y-1 hover:shadow-xl active:scale-95">
+                    <a href="#"
+                        class="px-6 py-3 text-sm font-semibold text-white transition-all duration-300 bg-indigo-600 rounded-md shadow-lg hover:bg-indigo-500 hover:-translate-y-1 hover:shadow-xl active:scale-95">
                         Get started
                     </a>
-                    <a href="/materi" class="relative font-semibold text-indigo-400 transition-all duration-300 text-sm/6 group"> Learn more 
+                    <a href="/kegiatan"
+                        class="relative font-semibold text-indigo-400 transition-all duration-300 text-sm/6 group">
+                        Learn more
                         <span class="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
                     </a>
                 </div>
-                
+
             </div>
         </div>
     </div>
@@ -49,6 +51,7 @@
                 opacity: 0;
                 transform: translateY(20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -70,22 +73,26 @@
             display: inline-block;
             animation: blink 1s step-end infinite;
         }
-                keyframes fade-slide {
+
+        keyframes fade-slide {
             from {
                 opacity: 0;
                 transform: translateY(20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
+
         .animate-fade-slide {
             animation: fade-slide 0.8s ease-out;
         }
     </style>
     <script>
-        const text = "Gahita adalah Platform Pembelajaran Kebudayaan dengan menyediakan konten pembelajaran berupa modul & video yang menarik.";
+        const text =
+            "Gahita adalah Platform Pembelajaran Kebudayaan dengan menyediakan konten pembelajaran berupa modul & video yang menarik.";
         let index = 0;
 
         function typeEffect() {
@@ -101,22 +108,26 @@
     </script>
     <section class="w-full py-12 text-center bg-white dark:bg-gray-900">
         <h3 class="mb-8 text-3xl font-semibold text-gray-800 dark:text-white animate-fade-in"></h3>
-
         <div class="grid items-center justify-center grid-cols-2 gap-6 px-6 sm:grid-cols-3 md:grid-cols-5">
             <div class="flex justify-center">
-                <img src="/img/kemenbudaya.png" alt="Kementrian Kebudayaan" class="w-auto h-20 transition-transform duration-300 ease-in-out hover:scale-105">
+                <img src="/img/kemenbudaya.png" alt="Kementrian Kebudayaan"
+                    class="w-auto h-20 transition-transform duration-300 ease-in-out hover:scale-105">
             </div>
             <div class="flex justify-center">
-                <img src="/img/pendidikan.png" alt="pendidikan" class="w-auto h-20 transition-transform duration-300 ease-in-out hover:scale-105">
+                <img src="/img/pendidikan.png" alt="pendidikan"
+                    class="w-auto h-20 transition-transform duration-300 ease-in-out hover:scale-105">
             </div>
             <div class="flex justify-center">
-                <img src="/img/merdeka.png" alt="merdeka" class="w-auto h-20 transition-transform duration-300 ease-in-out hover:scale-105">
+                <img src="/img/merdeka.png" alt="merdeka"
+                    class="w-auto h-20 transition-transform duration-300 ease-in-out hover:scale-105">
             </div>
             <div class="flex justify-center">
-                <img src="/img/laravel.png" alt="Laravel" class="w-auto h-20 transition-transform duration-300 ease-in-out hover:scale-105">
+                <img src="/img/laravel.png" alt="Laravel"
+                    class="w-auto h-20 transition-transform duration-300 ease-in-out hover:scale-105">
             </div>
             <div class="flex justify-center">
-                <img src="/img/udayana.png" alt="udayana" class="w-auto h-20 transition-transform duration-300 ease-in-out hover:scale-105">
+                <img src="/img/udayana.png" alt="udayana"
+                    class="w-auto h-20 transition-transform duration-300 ease-in-out hover:scale-105">
             </div>
         </div>
     </section>
@@ -137,8 +148,12 @@
         </div>
         <div class="px-6 mx-auto max-w-7xl lg:px-8">
             <div class="max-w-2xl mx-auto lg:mx-0">
-                <h2 class="text-5xl font-semibold tracking-tight text-white sm:text-7xl">Pembelajaran dapat diakses Seumur hidup.</h2>
-                <p class="mt-8 text-lg font-medium text-gray-300 text-pretty sm:text-xl/8">Materi Pembelajaran di Gahita begitu banyak, kalian dapat memilih materi yang kalian gemari dan jangan khawatir karena waktu akses ke materi kalian akan berlaku seumur hidup, namun ada juga beberapa materi yang kami batasi waktunya seperti 6 bulan - 1 tahun.</p>
+                <h2 class="text-5xl font-semibold tracking-tight text-white sm:text-7xl">Pembelajaran dapat diakses
+                    Seumur hidup.</h2>
+                <p class="mt-8 text-lg font-medium text-gray-300 text-pretty sm:text-xl/8">Materi Pembelajaran di Gahita
+                    begitu banyak, kalian dapat memilih materi yang kalian gemari dan jangan khawatir karena waktu akses
+                    ke materi kalian akan berlaku seumur hidup, namun ada juga beberapa materi yang kami batasi waktunya
+                    seperti 6 bulan - 1 tahun.</p>
             </div>
             <div class="max-w-2xl mx-auto mt-10 lg:mx-0 lg:max-w-none">
                 <dl class="grid grid-cols-1 gap-8 mt-16 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
@@ -162,12 +177,12 @@
                 <script>
                     function startCounter() {
                         const counters = document.querySelectorAll(".counter");
-            
+
                         counters.forEach(counter => {
                             let target = +counter.getAttribute("data-target");
                             let count = 0;
                             let speed = target / 100; // Kecepatan animasi
-            
+
                             function updateCounter() {
                                 if (count < target) {
                                     count += speed;
@@ -180,7 +195,7 @@
                             updateCounter();
                         });
                     }
-            
+
                     function resetCounter() {
                         const counters = document.querySelectorAll(".counter");
                         counters.forEach(counter => {
@@ -188,13 +203,37 @@
                         });
                         setTimeout(startCounter, 500); // Mulai ulang animasi setelah reset
                     }
-            
+
                     startCounter();
                     setInterval(resetCounter, 5000);
                 </script>
             </div>
         </div>
     </div>
+    <section class="w-full py-12 text-center bg-white dark:bg-gray-900">
+        <h3 class="mb-8 text-3xl font-semibold text-gray-800 dark:text-white animate-fade-in"></h3>
+
+        <figure class="max-w-screen-md mx-auto text-center">
+            <svg class="w-10 h-10 mx-auto mb-3 text-gray-400 dark:text-gray-600" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+                <path
+                    d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
+            </svg>
+            <blockquote>
+                <p class="text-2xl italic font-medium text-gray-900 dark:text-white">"Keberhasilan bukanlah milik orang yang pintar. Keberhasilan adalah kepunyaan mereka yang senantiasa berusaha."</p>
+            </blockquote>
+            <figcaption class="flex items-center justify-center mt-6 space-x-3 rtl:space-x-reverse">
+                <img class="w-6 h-6 rounded-full"
+                    src="img/habibie.jpg"
+                    alt="profile picture">
+                <div class="flex items-center divide-x-2 divide-gray-500 rtl:divide-x-reverse dark:divide-gray-700">
+                    <cite class="font-medium text-gray-900 pe-3 dark:text-white">Bahcrudin Jusuf Habiebie</cite>
+                    <cite class="text-sm text-gray-500 ps-3 dark:text-gray-400">Presiden Republik Indonesia ke 3</cite>
+                </div>
+            </figcaption>
+        </figure>
+
+    </section>
     <div class="py-24 bg-gray-50 sm:py-32">
         <div class="max-w-2xl px-6 mx-auto lg:max-w-7xl lg:px-8">
             <h2 class="font-semibold text-center text-indigo-600 text-base/7">Deploy faster</h2>

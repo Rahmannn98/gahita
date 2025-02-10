@@ -10,7 +10,6 @@
     <title>Halaman About</title>
 </head>
 <x-header></x-header>
-
 <body>
     <section class="mt-16 bg-white dark:bg-gray-900">
         <div class="container px-6 py-10 mx-auto">
