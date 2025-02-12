@@ -14,3 +14,5 @@ Route::get('/contact', function () {
 });
 Route::get('/kegiatan', [ArticleController::class, 'index']);
 
+Route::get('/kegiatan/{id}', [ArticleController::class, 'show'])->name('articles.show');
+

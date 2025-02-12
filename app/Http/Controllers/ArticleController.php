@@ -12,4 +12,9 @@ class ArticleController extends Controller
         return view('kegiatan', compact('articles'));
 
     }
+    public function show($id)
+    {
+        $article = Article::findOrFail($id);
+        return view('article_detail', compact('article'));
+    }
 }
