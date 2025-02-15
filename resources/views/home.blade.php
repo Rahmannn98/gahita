@@ -27,24 +27,9 @@
                 <p class="mt-8 text-lg font-medium text-gray-200 sm:text-xl">
                     <span id="typing-text"></span><span id="cursor">|</span>
                 </p>
-                <div class="flex items-center justify-center mt-10 gap-x-6 animate-fade-slide">
-                    <!-- Tombol Get Started -->
-                    <a href="#"
-                        class="px-6 py-3 text-sm font-semibold text-white transition-all duration-300 bg-indigo-600 rounded-md shadow-lg hover:bg-indigo-500 hover:-translate-y-1 hover:shadow-xl active:scale-95">
-                        Get started
-                    </a>
-                    <a href="/kegiatan"
-                        class="relative font-semibold text-indigo-400 transition-all duration-300 text-sm/6 group">
-                        Learn more
-                        <span class="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
-                    </a>
-                </div>
-
             </div>
         </div>
     </div>
-
-    <!-- Animasi Fade-in -->
     <style>
         @keyframes fade-in {
             from {
@@ -106,31 +91,65 @@
             setTimeout(typeEffect, 500);
         };
     </script>
-    <section class="w-full py-12 text-center bg-white dark:bg-gray-900">
-        <h3 class="mb-8 text-3xl font-semibold text-gray-800 dark:text-white animate-fade-in"></h3>
-        <div class="grid items-center justify-center grid-cols-2 gap-6 px-6 sm:grid-cols-3 md:grid-cols-5">
-            <div class="flex justify-center">
-                <img src="/img/kemenbudaya.png" alt="Kementrian Kebudayaan"
-                    class="w-auto h-20 transition-transform duration-300 ease-in-out hover:scale-105">
+    <section class="bg-white dark:bg-gray-900">
+        <div class="items-center max-w-screen-xl gap-16 px-4 py-8 mx-auto lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+            <div class="font-light text-blue-700 sm:text-lg dark:text-white">
+                <h2 class="mb-4 text-4xl font-extrabold tracking-tight text-blue-900 dark:text-white">Platform Pembelajaran Pertama di Bali</h2>
+                <p class="mb-4 font-medium">Gahita hadir sebagai inovasi pendidikan pertama di Bali yang menghubungkan teknologi dengan pembelajaran interaktif. Kami adalah tim strategis, desainer, dan pengembang yang berdedikasi untuk menciptakan pengalaman belajar yang lebih mudah, efektif, dan menyenangkan.</p>
+                <p class="mb-4 font-medium">We are strategists, Belajar lebih cerdas, berkembang lebih cepat, hanya di Gahita! </p>
             </div>
-            <div class="flex justify-center">
-                <img src="/img/pendidikan.png" alt="pendidikan"
-                    class="w-auto h-20 transition-transform duration-300 ease-in-out hover:scale-105">
+            <div class="grid grid-cols-2 gap-4 mt-8">
+                <img class="w-full rounded-lg animate-slide-in-left" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png" alt="office content 1">
+                <img class="w-full mt-4 rounded-lg lg:mt-10 animate-slide-in-right" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png" alt="office content 2">
             </div>
-            <div class="flex justify-center">
-                <img src="/img/merdeka.png" alt="merdeka"
-                    class="w-auto h-20 transition-transform duration-300 ease-in-out hover:scale-105">
-            </div>
-            <div class="flex justify-center">
-                <img src="/img/laravel.png" alt="Laravel"
-                    class="w-auto h-20 transition-transform duration-300 ease-in-out hover:scale-105">
-            </div>
-            <div class="flex justify-center">
-                <img src="/img/udayana.png" alt="udayana"
-                    class="w-auto h-20 transition-transform duration-300 ease-in-out hover:scale-105">
+        </div>        
+    </section>
+    <div class="py-16 bg-white dark:bg-gray-900 sm:py-32">
+        <div class="px-6 mx-auto max-w-7xl lg:px-8">
+            <h2 class="mb-12 text-4xl font-semibold text-center text-blue-900 dark:text-gray-100">
+                Supported By
+            </h2>
+    
+            <!-- Wrapper untuk animasi -->
+            <div class="relative overflow-hidden">
+                <div class="flex space-x-10 animate-marquee">
+                    <div class="relative group">
+                        <img class="object-contain transition-transform duration-500 max-h-12 group-hover:scale-110 group-hover:rotate-3"
+                            src="img/merdeka.png" alt="merdeka" width="158" height="48">
+                    </div>
+                    <div class="relative group">
+                        <img class="object-contain transition-transform duration-500 max-h-12 group-hover:scale-110 group-hover:rotate-3"
+                            src="img/kemenbudaya.png" alt="kemenbudaya" width="158" height="48">
+                    </div>
+                    <div class="relative group">
+                        <img class="object-contain transition-transform duration-500 max-h-12 group-hover:scale-110 group-hover:rotate-3"
+                            src="img/pendidikan.png" alt="Kemenpendidikan" width="158" height="48">
+                    </div>
+                    <div class="relative group">
+                        <img class="object-contain transition-transform duration-500 max-h-12 group-hover:scale-110 group-hover:rotate-3"
+                            src="img/laravel.png" alt="Laravel" width="158" height="48">
+                    </div>
+                    <div class="relative group">
+                        <img class="object-contain transition-transform duration-500 max-h-12 group-hover:scale-110 group-hover:rotate-3"
+                            src="img/udayana.png" alt="Udayana" width="158" height="48">
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+    <!-- Tambahkan untuk animasi -->
+    <style>
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .animate-marquee {
+            display: flex;
+            white-space: nowrap;
+            animation: marquee 12s linear infinite;
+        }
+    </style>
+    
     <div class="relative py-24 overflow-hidden bg-gray-900 isolate sm:py-32">
         <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
             alt="" class="absolute inset-0 object-cover object-right -z-10 size-full md:object-center">
@@ -210,134 +229,71 @@
             </div>
         </div>
     </div>
-    <section class="w-full py-12 text-center bg-white dark:bg-gray-900">
-        <h3 class="mb-8 text-3xl font-semibold text-gray-800 dark:text-white animate-fade-in"></h3>
+    
+    <div class="px-6 py-24 bg-white dark:bg-gray-900">
+        <h1 class="mb-4 text-3xl font-bold text-center text-blue-900 dark:text-gray-100">
+           Apa Kata mereka?
+          </h1>
+          <h2 class="mb-12 font-semibold text-center text-blue-900 text-2l dark:text-gray-100">
+            Testimoni dan dukungan yang telah kami dapatkan selama inimenjadi bukti bahwa Platform Gahita profesional & aman.
+          </h2>
+        <div class="max-w-6xl mx-auto">
+            <div class="grid gap-8 md:grid-cols-3">
+                <!-- Testimonial Card 1 -->
+                <div
+                    class="p-6 transition duration-500 transform bg-gray-100 rounded-lg shadow dark:bg-gray-800 hover:scale-105">
+                    <blockquote class="text-lg font-semibold text-gray-900 dark:text-white">
+                        <p>“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa
+                            sapiente alias molestiae.”</p>
+                    </blockquote>
+                    <figcaption class="flex flex-col items-center mt-6">
+                        <img class="w-12 h-12 rounded-full"
+                            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                            alt="">
+                        <div class="mt-4 text-center">
+                            <div class="font-semibold text-gray-900 dark:text-white">Judith Black</div>
+                            <div class="text-sm text-gray-600 dark:text-gray-400">CEO of Workcation</div>
+                        </div>
+                    </figcaption>
+                </div>
 
-        <figure class="max-w-screen-md mx-auto text-center">
-            <svg class="w-10 h-10 mx-auto mb-3 text-gray-400 dark:text-gray-600" aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
-                <path
-                    d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
-            </svg>
-            <blockquote>
-                <p class="text-2xl italic font-medium text-gray-900 dark:text-white">"Keberhasilan bukanlah milik orang yang pintar. Keberhasilan adalah kepunyaan mereka yang senantiasa berusaha."</p>
-            </blockquote>
-            <figcaption class="flex items-center justify-center mt-6 space-x-3 rtl:space-x-reverse">
-                <img class="w-6 h-6 rounded-full"
-                    src="img/habibie.jpg"
-                    alt="profile picture">
-                <div class="flex items-center divide-x-2 divide-gray-500 rtl:divide-x-reverse dark:divide-gray-700">
-                    <cite class="font-medium text-gray-900 pe-3 dark:text-white">Bahcrudin Jusuf Habiebie</cite>
-                    <cite class="text-sm text-gray-500 ps-3 dark:text-gray-400">Presiden Republik Indonesia ke 3</cite>
+                <!-- Testimonial Card 2 -->
+                <div
+                    class="p-6 transition duration-500 transform bg-gray-100 rounded-lg shadow dark:bg-gray-800 hover:scale-105">
+                    <blockquote class="text-lg font-semibold text-gray-900 dark:text-white">
+                        <p>“Doloribus quisquam vel, quia necessitatibus delectus aperiam reiciendis consequatur velit
+                            animi.”</p>
+                    </blockquote>
+                    <figcaption class="flex flex-col items-center mt-6">
+                        <img class="w-12 h-12 rounded-full"
+                            src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                            alt="">
+                        <div class="mt-4 text-center">
+                            <div class="font-semibold text-gray-900 dark:text-white">John Doe</div>
+                            <div class="text-sm text-gray-600 dark:text-gray-400">Founder of TechFlow</div>
+                        </div>
+                    </figcaption>
                 </div>
-            </figcaption>
-        </figure>
 
-    </section>
-    <div class="py-24 bg-gray-50 sm:py-32">
-        <div class="max-w-2xl px-6 mx-auto lg:max-w-7xl lg:px-8">
-            <h2 class="font-semibold text-center text-indigo-600 text-base/7">Deploy faster</h2>
-            <p
-                class="max-w-lg mx-auto mt-2 text-4xl font-semibold tracking-tight text-center text-balance text-gray-950 sm:text-5xl">
-                Everything you need to deploy your app</p>
-            <div class="grid gap-4 mt-10 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
-                <div class="relative lg:row-span-2">
-                    <div class="absolute inset-px rounded-lg bg-white lg:rounded-l-[2rem]"></div>
-                    <div
-                        class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
-                        <div class="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
-                            <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Mobile
-                                friendly</p>
-                            <p class="max-w-lg mt-2 text-gray-600 text-sm/6 max-lg:text-center">Anim aute id magna
-                                aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.</p>
+                <!-- Testimonial Card 3 -->
+                <div
+                    class="p-6 transition duration-500 transform bg-gray-100 rounded-lg shadow dark:bg-gray-800 hover:scale-105">
+                    <blockquote class="text-lg font-semibold text-gray-900 dark:text-white">
+                        <p>“Explicabo similique eum, omnis iure commodi distinctio laudantium nisi excepturi.”</p>
+                    </blockquote>
+                    <figcaption class="flex flex-col items-center mt-6">
+                        <img class="w-12 h-12 rounded-full"
+                            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                            alt="">
+                        <div class="mt-4 text-center">
+                            <div class="font-semibold text-gray-900 dark:text-white">Sarah Connor</div>
+                            <div class="text-sm text-gray-600 dark:text-gray-400">CMO of FutureTech</div>
                         </div>
-                        <div class="@container relative min-h-[30rem] w-full grow max-lg:mx-auto max-lg:max-w-sm">
-                            <div
-                                class="absolute inset-x-10 top-10 bottom-0 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-gray-900 shadow-2xl">
-                                <img class="object-cover object-top size-full"
-                                    src="https://tailwindui.com/plus/img/component-images/bento-03-mobile-friendly.png"
-                                    alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5 lg:rounded-l-[2rem]">
-                    </div>
-                </div>
-                <div class="relative max-lg:row-start-1">
-                    <div class="absolute inset-px rounded-lg bg-white max-lg:rounded-t-[2rem]"></div>
-                    <div
-                        class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
-                        <div class="px-8 pt-8 sm:px-10 sm:pt-10">
-                            <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">
-                                Performance</p>
-                            <p class="max-w-lg mt-2 text-gray-600 text-sm/6 max-lg:text-center">Lorem ipsum, dolor sit
-                                amet consectetur adipisicing elit maiores impedit.</p>
-                        </div>
-                        <div
-                            class="flex items-center justify-center flex-1 px-8 max-lg:pt-10 max-lg:pb-12 sm:px-10 lg:pb-2">
-                            <img class="w-full max-lg:max-w-xs"
-                                src="https://tailwindui.com/plus/img/component-images/bento-03-performance.png"
-                                alt="">
-                        </div>
-                    </div>
-                    <div
-                        class="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5 max-lg:rounded-t-[2rem]">
-                    </div>
-                </div>
-                <div class="relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2">
-                    <div class="absolute bg-white rounded-lg inset-px"></div>
-                    <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)]">
-                        <div class="px-8 pt-8 sm:px-10 sm:pt-10">
-                            <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">
-                                Security</p>
-                            <p class="max-w-lg mt-2 text-gray-600 text-sm/6 max-lg:text-center">Morbi viverra dui mi
-                                arcu sed. Tellus semper adipiscing suspendisse semper morbi.</p>
-                        </div>
-                        <div class="@container flex flex-1 items-center max-lg:py-6 lg:pb-2">
-                            <img class="h-[min(152px,40cqw)] object-cover"
-                                src="https://tailwindui.com/plus/img/component-images/bento-03-security.png"
-                                alt="">
-                        </div>
-                    </div>
-                    <div class="absolute rounded-lg shadow-sm pointer-events-none inset-px ring-1 ring-black/5"></div>
-                </div>
-                <div class="relative lg:row-span-2">
-                    <div class="absolute inset-px rounded-lg bg-white max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]">
-                    </div>
-                    <div
-                        class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
-                        <div class="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
-                            <p class="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">
-                                Powerful APIs</p>
-                            <p class="max-w-lg mt-2 text-gray-600 text-sm/6 max-lg:text-center">Sit quis amet rutrum
-                                tellus ullamcorper ultricies libero dolor eget sem sodales gravida.</p>
-                        </div>
-                        <div class="relative min-h-[30rem] w-full grow">
-                            <div
-                                class="absolute bottom-0 right-0 overflow-hidden bg-gray-900 shadow-2xl top-10 left-10 rounded-tl-xl">
-                                <div class="flex bg-gray-800/40 ring-1 ring-white/5">
-                                    <div class="flex -mb-px font-medium text-gray-400 text-sm/6">
-                                        <div
-                                            class="px-4 py-2 text-white border-b border-r border-r-white/10 border-b-white/20 bg-white/5">
-                                            NotificationSetting.jsx</div>
-                                        <div class="px-4 py-2 border-r border-gray-600/10">App.jsx</div>
-                                    </div>
-                                </div>
-                                <div class="px-6 pt-6 pb-14">
-                                    <!-- Your code example -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]">
-                    </div>
+                    </figcaption>
                 </div>
             </div>
         </div>
     </div>
     <x-footer></x-footer>
 </body>
-
 </html>

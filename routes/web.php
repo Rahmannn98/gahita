@@ -6,8 +6,8 @@ use App\Http\Controllers\ArticleController;
 Route::get('/home', function () {
     return view('home');
 });
-Route::get('/pengajar', function () {
-    return view('pengajar');
+Route::get('/materi', function () {
+    return view('materi');
 });
 Route::get('/contact', function () {
     return view('contact');

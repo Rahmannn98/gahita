@@ -4,9 +4,11 @@
             <div class="lg:flex">
                 <div class="w-full -mx-6 lg:w-2/5">
                     <div class="px-6">
-                        <a href="#">
-                            <img class="w-auto h-8 opacity-80 dark:hidden" src="img/gahita.png" alt="Logo Gahita"> 
-                            <img class="hidden w-auto h-8 opacity-100 dark:block" src="img/gahita_white.png" alt="Logo Gahita">
+                        <a href="#" class="group">
+                            <img class="w-auto h-8 transition-transform duration-300 transform opacity-80 dark:hidden group-hover:scale-110 group-hover:shadow-lg"
+                                src="img/gahita.png" alt="Logo Gahita"> 
+                            <img class="hidden w-auto h-8 transition-transform duration-300 transform opacity-100 dark:block group-hover:scale-110 group-hover:shadow-lg"
+                                src="img/gahita_white.png" alt="Logo Gahita">
                         </a>
                         <p class="max-w-sm mt-2 text-gray-500 dark:text-gray-400">Join 31,000+ other and never miss out on new tips, tutorials, and more.</p>
                         <div class="flex mt-6 -mx-2">

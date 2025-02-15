@@ -16,14 +16,14 @@
         <div class="px-6 mx-auto max-w-7xl lg:px-8">
             <div class="max-w-2xl mx-auto text-center ">
                 <h2 class="text-4xl font-semibold tracking-tight dark:bg-gray-900 dark:text-gray-100 sm:text-5xl">Kegiatan Kami</h2>
-                <p class="mt-2 text-lg dark:bg-gray-900 dark:text-gray-100">Learn how to grow your business with our expert advice.</p>
+                <p class="mt-2 text-lg dark:bg-gray-900 dark:text-gray-100">Selamat datang, Berikut merupakan kegiatan yang ada di gahita</p>
             </div>
             <div
                 class="grid max-w-2xl grid-cols-1 pt-10 mx-auto mt-10 border-t border-gray-200 gap-x-8 gap-y-16 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3 ">
                 @foreach ($articles as $article)
                     <article
                         class="flex flex-col items-start justify-between max-w-xl p-4 transition-transform duration-300 rounded-lg hover:scale-105 hover:shadow-lg animate-fade-in">
-                        <a href="{{ route('articles.show',$article->id)}}">
+                        <a href="{{route('articles.show',$article->id)}}">
                           <img class="w-full transition-transform duration-300 rounded-xl hover:scale-110"
                           src="{{ $article->image ? (Str::startsWith($article->image, 'http') ? $article->image : asset('storage/' . $article->image)) : asset('img/gwk.jpg') }}"alt="Blog Image">      
                         </a>
@@ -35,7 +35,7 @@
                         <h3 class="mt-3 text-lg font-semibold dark:bg-gray-900 dark:text-gray-100 group-hover:text-gray-600">
                             <a href="/detail">{{ $article->title }}</a>
                         </h3>
-                        <p class="mt-2 text-sm text-gray-600">{{ $article->content }}</p>
+                        <p class="mt-2 text-sm text-gray-600">{{Str::limit($article->content,100)  }}</p>
                     </article>
                 @endforeach
             </div>
