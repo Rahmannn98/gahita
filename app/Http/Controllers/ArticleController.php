@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Article;
 use App\Models\Materi;
+use App\Models\Rekomendasi; 
 use Illuminate\Http\Request;
 
 class ArticleController extends Controller
@@ -11,8 +12,8 @@ class ArticleController extends Controller
     // Menampilkan daftar artikel (kegiatan)
     public function index()
     {
-        $articles = Article::all(); // Ambil semua artikel
-        $materis = Materi::all(); // Ambil semua materi
+        $articles = Article::all();
+        $materis = Materi::all();
 
         return view('kegiatan', compact('articles', 'materis'));
     }
@@ -21,6 +22,16 @@ class ArticleController extends Controller
     public function show($id)
     {
         $article = Article::findOrFail($id);
-        return view('detail-kegiatan', compact('article'));
+        $articles = Article::all();
+        $materis = Materi::all();
+    
+        // Ambil artikel terkait dari tabel rekomendasis berdasarkan kategori yang sama
+        $rekomendasis = Rekomendasi::where('category', $article->category)
+                            ->where('id', '!=', $id) // Hindari menampilkan artikel yang sedang dibuka
+                            ->latest()
+                            ->take(3)
+                            ->get();
+    
+        return view('detail-kegiatan', compact('article', 'articles', 'materis', 'rekomendasis'));
     }
 }

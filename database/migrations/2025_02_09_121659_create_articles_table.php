@@ -16,7 +16,8 @@ return new class extends Migration
         $table->string('title');
         $table->text('content');
         $table->string('image')->nullable();
-        $table->string('category');
+        $table->string('category')->nullable();
+        $table->text('references')->nullable(); // Kolom referensi
         $table->timestamps();
     });
 }
