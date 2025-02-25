@@ -10,4 +10,9 @@ class Materi extends Model
     use HasFactory;
 
     protected $table = 'materis'; 
+    
+    public function detailMateri()
+    {
+        return $this->hasMany(DetailMateri::class, 'materi_id');
+    }
 }

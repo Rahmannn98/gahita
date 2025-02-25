@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\MateriController; // Ensure this class exists in the specified namespace
 use App\Http\Controllers\RekomendasiController; // Ensure this class exists in the specified namespace
+use App\Http\Controllers\ContactController; // Ensure this class exists in the specified namespace
 
 Route::get('/home', function () {
     return view('home');
@@ -26,4 +27,8 @@ Route::get('/articles/{id}', [ArticleController::class, 'show'])->name('articles
 Route::get('/rekomendasi', [RekomendasiController::class, 'index'])->name('rekomendasi.index');
 
 Route::get('/rekomendasi/{id}', [RekomendasiController::class, 'show'])->name('rekomendasi.show');
+
+Route::get('/materi/{id}', [MateriController::class, 'show'])->name('detail-materi.show');
+
+Route::post('/send-email', [ContactController::class, 'sendEmail'])->name('send.email');
 

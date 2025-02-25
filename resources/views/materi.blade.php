@@ -48,20 +48,35 @@
             <!-- Grid Materi -->
             <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 @foreach ($materis as $materi)
-                    <div class="p-4 transition-transform bg-white rounded-lg shadow-lg product-card dark:bg-gray-800 dark:text-white animate-fadeIn hover:shadow-2xl hover:scale-105" data-category="{{ $materi->kategori }}">
-                        <img src="{{ Str::startsWith($materi->gambar, 'http') ? $materi->gambar : asset('img/' . $materi->gambar) }}" alt="{{ $materi->judul }}" class="object-cover w-full h-48 rounded-md">
-                        <h2 class="mt-4 text-xl font-semibold">{{ $materi->judul }}</h2>
-                        <p class="mt-2 text-gray-600 dark:text-gray-300">{{ Str::limit($materi->deskripsi, 100) }}</p>
-                        <div class="flex items-center mt-2">
-                            <span class="text-yellow-400">★★★★★</span>
-                            <span class="ml-2 text-gray-500 dark:text-gray-300">(5.0)</span>
-                        </div>
-                        <div class="flex items-center justify-between mt-4">
-                            <div>
-                                <span class="text-gray-400 line-through">Rp175.000</span>
-                                <span class="text-lg font-bold text-red-500">Rp150.000</span>
+                    <div class="p-6 transition-transform bg-white rounded-lg shadow-lg product-card dark:bg-gray-800 dark:text-white animate-fadeIn hover:shadow-2xl hover:scale-105" data-category="{{ $materi->kategori }}">
+                        <!-- Gambar Materi -->
+                        <div class="relative overflow-hidden rounded-lg">
+                            <img src="{{ Str::startsWith($materi->gambar, 'http') ? $materi->gambar : asset('img/' . $materi->gambar) }}" alt="{{ $materi->judul }}" class="object-cover w-full h-48 transition-transform duration-300 rounded-lg hover:scale-110">
+                            <div class="absolute inset-0 flex items-center justify-center transition-opacity duration-300 bg-black opacity-0 bg-opacity-30 hover:opacity-100">
+                                <a href="{{ route('detail-materi.show', $materi->id) }}" class="px-6 py-2 text-white bg-blue-500 rounded-lg hover:bg-blue-600">Lihat Materi</a>
                             </div>
-                            <button class="px-4 py-2 text-white bg-blue-500 rounded-lg hover:bg-blue-600">Beli</button>
+                        </div>
+            
+                        <!-- Judul dan Deskripsi -->
+                        <h2 class="mt-4 text-xl font-semibold text-gray-900 dark:text-white">{{ $materi->judul }}</h2>
+                        <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">{{ Str::limit($materi->deskripsi, 100) }}</p>
+            
+                        <!-- Rating -->
+                        <div class="flex items-center mt-2">
+                            <div class="flex items-center">
+                                <span class="text-yellow-400">★★★★★</span>
+                                <span class="ml-2 text-sm text-gray-500 dark:text-gray-300">(5.0)</span>
+                            </div>
+                        </div>
+            
+                        <!-- Tombol Lihat Materi -->
+                        <div class="mt-4">
+                            <a href="{{ route('detail-materi.show', $materi->id) }}" class="flex items-center justify-center w-full px-4 py-2 text-white bg-blue-500 rounded-lg hover:bg-blue-600">
+                                <span>Lihat Materi</span>
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 @endforeach
