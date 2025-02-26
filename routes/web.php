@@ -19,7 +19,6 @@ Route::get('/kegiatan', [ArticleController::class, 'index']);
 
 Route::get('/kegiatan/{id}', [ArticleController::class, 'show'])->name('articles.show');
 
-// Rute untuk halaman materi (menggunakan database)
 Route::get('/materi', [MateriController::class, 'index'])->name('materi.index');
 
 Route::get('/articles/{id}', [ArticleController::class, 'show'])->name('articles.show');

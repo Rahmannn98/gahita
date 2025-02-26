@@ -10,15 +10,15 @@
     
     <!-- Hero Section -->
     <div class="relative w-full bg-center bg-cover h-96" style="background-image: url('{{ $article->image }}');">
-        <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center bg-black bg-opacity-50">
-            <h1 class="text-4xl font-bold">{{ $article->title }}</h1>
+        <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center bg-gradient-to-t from-black via-transparent to-transparent">
+            <h1 class="text-4xl font-bold text-white">{{ $article->title }}</h1>
             <p class="mt-2 text-gray-300">{{ $article->created_at->format('M d, Y') }} | {{ $article->category }}</p>
         </div>
     </div>
     
     <!-- Content Section -->
-    <div class="max-w-4xl px-6 py-12 mx-auto text-gray-200">
-        <div class="prose prose-invert max-w-none">{!! nl2br(e($article->content ?? 'Belum ada konten')) !!}</div>
+    <div class="max-w-4xl px-6 py-12 mx-auto text-gray-800 dark:text-gray-200">
+        <div class="prose prose-lg prose-invert max-w-none">{!! nl2br(e($article->content ?? 'Belum ada konten')) !!}</div>
         <a href="{{ url('/kegiatan') }}" class="inline-block px-6 py-3 mt-6 text-white transition bg-blue-600 rounded-lg hover:bg-blue-700">
             &larr; Kembali
         </a>

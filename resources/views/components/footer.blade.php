@@ -47,8 +47,10 @@
                     <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                         <div>
                             <h3 class="text-gray-700 uppercase dark:text-white">About</h3>
-                            <a href="/pengajar" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Pengajar</a>
+                            <a href="/home" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Home</a>
+                            <a href="/kegiatan" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Kegiatan Kami</a>
                             <a href="/materi" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Materi</a>
+                            <a href="/contact" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Contact</a>
                         </div>
                         <div>
                             <h3 class="text-gray-700 uppercase dark:text-white">Blog</h3>
