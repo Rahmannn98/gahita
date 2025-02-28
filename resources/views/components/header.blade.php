@@ -29,7 +29,7 @@
                     class="fixed inset-y-0 right-0 z-50 w-full max-w-sm px-6 py-6 overflow-y-auto bg-white shadow-lg ring-1 ring-gray-900/10">
                     
                     <div class="flex items-center justify-between">
-                        <a href="#" class="-m-1.5 p-1.5">
+                        <a href="/home" class="-m-1.5 p-1.5">
                             <span class="sr-only">Gahita</span>
                             <img class="w-auto h-8" src="img/gahita.png" alt="Logo Gahita">
                         </a>
