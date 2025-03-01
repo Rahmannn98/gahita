@@ -45,7 +45,7 @@
                         <div class="-my-6 divide-y divide-gray-500/10">
                             <div class="py-6 space-y-2">
                                 <a href="/home" class="block px-3 py-2 -mx-3 font-semibold text-blue-900 rounded-lg text-base/7 hover:bg-gray-50">Beranda</a>
-                                <a href="/kegiatan" class="block px-3 py-2 -mx-3 font-semibold text-blue-900 rounded-lg text-base/7 hover:bg-gray-50">Kegiatan Kami</a>
+                                <a href="/kegiatan" class="block px-3 py-2 -mx-3 font-semibold text-blue-900 rounded-lg text-base/7 hover:bg-gray-50">Ruang Literasi</a>
                                 <a href="/materi" class="block px-3 py-2 -mx-3 font-semibold text-blue-900 rounded-lg text-base/7 hover:bg-gray-50">Materi</a>
                                 <a href="/contact" class="block px-3 py-2 -mx-3 font-semibold text-blue-900 rounded-lg text-base/7 hover:bg-gray-50">Contact</a>
                             </div>
@@ -58,7 +58,7 @@
             </div>    
             <div class="hidden lg:flex lg:gap-x-12">
                 <a href="/home" class="font-semibold text-blue-900 dark:text-gray-100 text-sm/6">Beranda</a>
-                <a href="/kegiatan" class="font-semibold text-blue-900 dark:text-gray-100 text-sm/6">Kegiatan Kami</a>
+                <a href="/kegiatan" class="font-semibold text-blue-900 dark:text-gray-100 text-sm/6">Ruang Literasi</a>
                 <a href="/materi" class="font-semibold text-blue-900 dark:text-gray-100 text-sm/6">Materi</a>
                 <a href="/contact" class="font-semibold text-blue-900 dark:text-gray-100 text-sm/6">Contact</a>
             </div>

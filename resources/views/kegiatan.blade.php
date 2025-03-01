@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     @vite('resources/css/app.css')
-    <title>Page kegiatan</title>
+    <title>Ruang Literasi</title>
 </head>
 
 <body class="h-full text-gray-900 bg-white dark:bg-gray-900 dark:text-gray-100">
@@ -16,10 +16,10 @@
         <div class="px-6 mx-auto max-w-7xl lg:px-8">
             <div class="max-w-2xl mx-auto text-center">
                 <h2 class="text-4xl font-semibold tracking-tight dark:bg-gray-900 dark:text-gray-100 sm:text-5xl">
-                    Kegiatan Kami
+                    Ruang Literasi
                 </h2>
                 <p class="mt-2 text-lg dark:bg-gray-900 dark:text-gray-100">
-                    Selamat datang, Berikut merupakan kegiatan yang ada di gahita
+                   Menambah wawasan dengan membaca beberapa artikel terkait budaya bali.
                 </p>
             </div>
 

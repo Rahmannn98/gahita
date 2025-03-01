@@ -48,7 +48,7 @@
                         <div>
                             <h3 class="text-gray-700 uppercase dark:text-white">About</h3>
                             <a href="/home" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Home</a>
-                            <a href="/kegiatan" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Kegiatan Kami</a>
+                            <a href="/kegiatan" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Ruang Literasi</a>
                             <a href="/materi" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Materi</a>
                             <a href="/contact" class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">Contact</a>
                         </div>
