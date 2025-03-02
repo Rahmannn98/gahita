@@ -21,10 +21,6 @@
                             Memiliki pertanyaan atau ingin berlangganan? Silahkan hubungi kami melalui formulir di bawah ini.
                         </p>
     
-                        <button class="px-8 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-md hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-50">
-                            get in touch
-                        </button>
-    
                         <div class="mt-6 md:mt-8">
                             <h3 class="text-gray-300 ">Follow us</h3>
                             <div class="flex mt-4 -mx-1.5 ">
@@ -62,14 +58,13 @@
                             <h1 class="text-xl font-medium text-gray-700 dark:text-gray-200">Contact form</h1>
     
                             <p class="mt-2 text-gray-500 dark:text-gray-400">
-                                Ask us everything and we would love
-                                to hear from you
+                                Tanyakan apapun keperluan anda, kami senang hati untuk mendengarkan masukan dan juga saran anda.
                             </p>
     
                             <form class="mt-6" action="/send-email" method="POST">
                                 @csrf 
                                 <div class="flex-1">
-                                    <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Full Name</label>
+                                    <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Nama</label>
                                     <input type="text" name="name" placeholder="John Doe" class="block w-full px-5 py-3 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring" />
                                 </div>
                             
@@ -79,12 +74,12 @@
                                 </div>
                             
                                 <div class="w-full mt-6">
-                                    <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Message</label>
-                                    <textarea name="message" class="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring" placeholder="Message"></textarea>
+                                    <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Pesan</label>
+                                    <textarea name="Pesan" class="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring" placeholder="Message"></textarea>
                                 </div>
                             
                                 <button type="submit" class="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-md hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-50">
-                                    get in touch
+                                   Kirim
                                 </button>
                             </form>
                         </div>
