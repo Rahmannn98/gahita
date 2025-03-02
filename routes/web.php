@@ -9,12 +9,14 @@ use App\Http\Controllers\ContactController; // Ensure this class exists in the s
 Route::get('/', function () {
     return view('home');
 });
+Route::get('/home', function () {
+    return view('home');
+});
 
 Route::get('/contact', function () {
     return view('contact');
 });
 
-// Rute untuk halaman kegiatan (menggunakan database)
 Route::get('/kegiatan', [ArticleController::class, 'index']);
 
 Route::get('/kegiatan/{id}', [ArticleController::class, 'show'])->name('articles.show');
