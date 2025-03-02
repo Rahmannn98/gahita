@@ -6,7 +6,7 @@ use App\Http\Controllers\MateriController; // Ensure this class exists in the sp
 use App\Http\Controllers\RekomendasiController; // Ensure this class exists in the specified namespace
 use App\Http\Controllers\ContactController; // Ensure this class exists in the specified namespace
 
-Route::get('/home', function () {
+Route::get('/', function () {
     return view('home');
 });
 

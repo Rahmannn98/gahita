@@ -15,11 +15,12 @@
     <div class="py-24 bg-white sm:py-32 dark:bg-gray-900">
         <div class="px-6 mx-auto max-w-7xl lg:px-8">
             <div class="max-w-2xl mx-auto text-center">
-                <h2 class="text-4xl font-semibold tracking-tight dark:bg-gray-900 dark:text-gray-100 sm:text-5xl">
+                <!-- Teks dengan Gradient -->
+                <h2 class="text-4xl font-semibold leading-tight tracking-tight text-transparent bg-gradient-to-r from-blue-900 to-blue-400 bg-clip-text sm:text-5xl text-gradient">
                     Ruang Literasi
                 </h2>
-                <p class="mt-2 text-lg dark:bg-gray-900 dark:text-gray-100">
-                   Menambah wawasan dengan membaca beberapa artikel terkait budaya bali.
+                <p class="mt-2 text-lg text-transparent bg-gradient-to-r from-blue-900 to-blue-400 bg-clip-text dark:text-gray-100">
+                    Menambah wawasan dengan membaca beberapa artikel terkait budaya Bali.
                 </p>
             </div>
 
@@ -39,10 +40,10 @@
                                 {{ $article->category ?? 'Tanpa Kategori' }}
                             </span>
                         </div>
-                        <h3 class="mt-3 text-lg font-semibold dark:bg-gray-900 dark:text-gray-100 group-hover:text-gray-600">
+                        <h3 class="mt-3 text-lg font-semibold text-transparent bg-gradient-to-r from-blue-800 to-blue-400 bg-clip-text">
                             <a href="{{ route('articles.show', $article->id) }}">{{ $article->title }}</a>
                         </h3>
-                        <p class="mt-2 text-sm text-gray-600">
+                        <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">
                             {{ Str::limit($article->content ?? 'Tidak ada deskripsi.', 100) }}
                         </p>
                         <a href="{{ route('articles.show', $article->id) }}" class="flex items-center mt-4 text-sm text-blue-600 hover:text-blue-800">
@@ -57,7 +58,7 @@
             
             <!-- Artikel Terkait -->
             @if (isset($rekomendasis) && $rekomendasis->count() > 0)
-                <h3 class="text-2xl font-semibold text-center dark:text-gray-100">Artikel Terkait</h3>
+                <h3 class="text-2xl font-semibold text-center text-transparent bg-gradient-to-r from-blue-900 to-blue-400 bg-clip-text">Artikel Terkait</h3>
                 <div class="grid max-w-2xl grid-cols-1 mx-auto mt-6 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8">
                     @foreach ($rekomendasis as $related)
                         <article class="flex flex-col items-start justify-between p-4 transition-transform duration-300 rounded-lg hover:scale-105 hover:shadow-lg animate-fade-in">
@@ -72,7 +73,8 @@
                                     {{ $related->category ?? 'Tanpa Kategori' }}
                                 </span>
                             </div>
-                            <h3 class="mt-3 text-lg font-semibold dark:text-gray-100">
+                            <!-- Judul Artikel Terkait dengan Gradient -->
+                            <h3 class="mt-3 text-lg font-semibold text-transparent bg-gradient-to-r from-blue-900 to-blue-400 bg-clip-text">
                                 <a href="{{ route('articles.show', $related->id) }}">{{ $related->title }}</a>
                             </h3>
                         </article>

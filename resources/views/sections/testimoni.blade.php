@@ -4,53 +4,49 @@
     <div class="max-w-6xl mx-auto">
         <div class="grid gap-8 md:grid-cols-3">
             <!-- Testimonial Card 1 -->
-            <div
-                class="p-6 transition duration-500 transform bg-gray-100 rounded-lg shadow dark:bg-gray-800 hover:scale-105">
+            <div class="p-6 transition duration-500 transform bg-gray-100 rounded-lg shadow dark:bg-gray-800 hover:scale-105">
                 <blockquote class="text-lg font-semibold text-gray-900 dark:text-white">
-                    <p>“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa
-                        sapiente alias molestiae.”</p>
+                    <p>“Bahagia saya mendengar kabar ini, teknologi diintegrasikan dengan Seni Budaya Bali akan menjadi karya yang luar biasa dan dapat memberikan impact positif ke masyarakat.”</p>
                 </blockquote>
                 <figcaption class="flex flex-col items-center mt-6">
                     <img class="w-12 h-12 rounded-full"
-                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                        alt="">
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Wakil_Gubernur_Bali_Tjokorda_Oka_Artha_Ardana_Sukawati.png/600px-Wakil_Gubernur_Bali_Tjokorda_Oka_Artha_Ardana_Sukawati.png"
+                        alt="Tok Ace">
                     <div class="mt-4 text-center">
-                        <div class="font-semibold text-gray-900 dark:text-white">Judith Black</div>
-                        <div class="text-sm text-gray-600 dark:text-gray-400">CEO of Workcation</div>
+                        <div class="font-semibold text-gray-900 dark:text-white">Tjokorda Oka Artha Ardana Sukawati</div>
+                        <div class="text-sm text-gray-600 dark:text-gray-400">Mantan Wakil Gubernur Bali</div>
                     </div>
                 </figcaption>
             </div>
 
             <!-- Testimonial Card 2 -->
-            <div
-                class="p-6 transition duration-500 transform bg-gray-100 rounded-lg shadow dark:bg-gray-800 hover:scale-105">
+            <div class="p-6 transition duration-500 transform bg-gray-100 rounded-lg shadow dark:bg-gray-800 hover:scale-105">
                 <blockquote class="text-lg font-semibold text-gray-900 dark:text-white">
-                    <p>“Doloribus quisquam vel, quia necessitatibus delectus aperiam reiciendis consequatur velit
-                        animi.”</p>
+                    <p>“Tidak perlu khawatir lagi tentang Budaya Bali di masa mendatang karena Gahita sudah berkontribusi dalam membentuk Digital Asset Budaya Bali untuk generasi mendatang.”</p>
                 </blockquote>
                 <figcaption class="flex flex-col items-center mt-6">
                     <img class="w-12 h-12 rounded-full"
-                        src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                        alt="">
+                        src="https://smkti-baliglobal.sch.id/gambar/yayasan/1.jpg"
+                        alt="Prof. I Made Bandem">
                     <div class="mt-4 text-center">
-                        <div class="font-semibold text-gray-900 dark:text-white">John Doe</div>
-                        <div class="text-sm text-gray-600 dark:text-gray-400">Founder of TechFlow</div>
+                        <div class="font-semibold text-gray-900 dark:text-white">Prof. I Made Bandem</div>
+                        <div class="text-sm text-gray-600 dark:text-gray-400">Mantan Rektor ISI Yogyakarta</div>
                     </div>
                 </figcaption>
             </div>
+
             <!-- Testimonial Card 3 -->
-            <div
-                class="p-6 transition duration-500 transform bg-gray-100 rounded-lg shadow dark:bg-gray-800 hover:scale-105">
+            <div class="p-6 transition duration-500 transform bg-gray-100 rounded-lg shadow dark:bg-gray-800 hover:scale-105">
                 <blockquote class="text-lg font-semibold text-gray-900 dark:text-white">
-                    <p>“Explicabo similique eum, omnis iure commodi distinctio laudantium nisi excepturi.”</p>
+                    <p>“Saya sangat mendukung platfom digital yang memiliki visi-misi mulia dalam memajukan kebudyaaan khususnya di Daerah Bali, Semoga bisa menajadi tempat edukasi seni & budaya berbasis digital</p>
                 </blockquote>
                 <figcaption class="flex flex-col items-center mt-6">
                     <img class="w-12 h-12 rounded-full"
-                        src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                        alt="">
+                        src="https://seminarnasional.ikj.ac.id/wp-content/uploads/2022/05/Prof.-Dr.-I-Wayan-Adnyana.jpeg"
+                        alt="Dewa Agu Melinia">
                     <div class="mt-4 text-center">
-                        <div class="font-semibold text-gray-900 dark:text-white">Sarah Connor</div>
-                        <div class="text-sm text-gray-600 dark:text-gray-400">CMO of FutureTech</div>
+                        <div class="font-semibold text-gray-900 dark:text-white">Wayan Kun Adnyana</div>
+                        <div class="text-sm text-gray-600 dark:text-gray-400">Kadis Kebudayaan Prov.Bali</div>
                     </div>
                 </figcaption>
             </div>

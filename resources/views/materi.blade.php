@@ -31,8 +31,13 @@
     <div class="py-24 bg-white sm:py-32 dark:bg-gray-900">
         <div class="px-6 mx-auto max-w-7xl lg:px-8">
             <div class="max-w-2xl mx-auto text-center animate-fadeIn">
-                    <h2 class="text-4xl font-semibold tracking-tight dark:text-gray-100 sm:text-5xl">Materi yang Tersedia</h2>
-                    <p class="mt-2 text-lg dark:text-gray-100">Selamat datang, berikut merupakan materi yang tersedia.</p>
+                <!-- Teks dengan Gradient -->
+                <h2 class="text-4xl font-semibold leading-tight tracking-tight text-transparent bg-gradient-to-r from-blue-900 to-blue-400 bg-clip-text sm:text-5xl text-gradient">
+                    Materi yang Tersedia
+                </h2>
+                <p class="mt-2 text-lg text-transparent bg-gradient-to-r from-blue-900 to-blue-400 bg-clip-text dark:text-gray-100">
+                    Selamat datang, berikut merupakan materi yang tersedia.
+                </p>
             </div>
 
             <!-- Filter Berdasarkan Kategori -->
@@ -57,8 +62,7 @@
                             </div>
                         </div>
             
-                        <!-- Judul dan Deskripsi -->
-                        <h2 class="mt-4 text-xl font-semibold text-gray-900 dark:text-white">{{ $materi->judul }}</h2>
+                        <h2 class="mt-4 text-xl font-semibold text-gray-900 dark:text-white">{{ $materi->nama }}</h2>
                         <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">{{ Str::limit($materi->deskripsi, 100) }}</p>
             
                         <!-- Rating -->
