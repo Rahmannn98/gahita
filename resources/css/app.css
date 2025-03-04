@@ -2,102 +2,107 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Animasi Umum */
+/* Animasi fade-in */
 @keyframes fade-in {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
+/* Animasi slide-in kiri */
 @keyframes slide-in-left {
-    from {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+    from { opacity: 0; transform: translateX(-100%); }
+    to { opacity: 1; transform: translateX(0); }
 }
 
+/* Animasi slide-in kanan */
 @keyframes slide-in-right {
-    from {
-        opacity: 0;
-        transform: translateX(100%);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+    from { opacity: 0; transform: translateX(100%); }
+    to { opacity: 1; transform: translateX(0); }
 }
 
+/* Animasi scale-up */
 @keyframes scale-up {
-    from {
-        transform: scale(0.9);
-        opacity: 0;
-    }
-    to {
-        transform: scale(1);
-        opacity: 1;
-    }
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
 }
 
+/* Animasi blink untuk cursor */
 @keyframes blink {
-    0%, 100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
 }
 
+/* Animasi marquee */
 @keyframes marquee {
-    0% {
-        transform: translateX(0%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
 }
 
-/* Class untuk Animasi */
+/* Class untuk animasi */
 .animate-fade-in {
-    opacity: 0;
     animation: fade-in 1s ease-out forwards;
 }
 
 .animate-slide-in-left {
-    opacity: 0;
     animation: slide-in-left 1s ease-out forwards;
 }
 
 .animate-slide-in-right {
-    opacity: 0;
     animation: slide-in-right 1s ease-out forwards;
 }
 
 .animate-scale-up {
-    opacity: 0;
     animation: scale-up 0.5s ease-out forwards;
 }
 
-.animate-marquee {
-    display: flex;
-    animation: marquee 20s linear infinite;
+/* Efek hover pada gambar */
+.hover-scale:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 
+/* Animasi blink untuk cursor */
 #cursor {
     display: inline-block;
     animation: blink 1s step-end infinite;
 }
 
-/* Efek Hover pada Gambar */
-.hover-scale:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
+/* Animasi marquee */
+.marquee {
+    animation: marquee 10s linear infinite;
+}
+
+/* Animasi Fade In */
+.animate-fade-in {
+    opacity: 0;
+    animation: fade-in 1s ease-in-out forwards;
+}
+
+/* Animasi Slide In */
+.animate-slide-in-left {
+    opacity: 0;
+    animation: slide-in-left 0.8s ease-in-out forwards;
+}
+
+.animate-slide-in-right {
+    opacity: 0;
+    animation: slide-in-right 0.8s ease-in-out forwards;
+}
+
+/* Animasi untuk elemen yang muncul saat scroll */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.animate-fade-out {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }

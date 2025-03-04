@@ -5,17 +5,12 @@ function typeEffect() {
     if (index < text.length) {
         document.getElementById("typing-text").innerHTML += text.charAt(index);
         index++;
-        setTimeout(typeEffect, 100); // Kecepatan typing (ms)
+        setTimeout(typeEffect, 100);
     } else {
-        // Setelah selesai, hilangkan cursor
+      
         document.getElementById("cursor").style.display = "none";
     }
 }
-
-// Jalankan efek typing saat halaman dimuat
-window.onload = () => {
-    setTimeout(typeEffect, 500); // Delay sebelum memulai efek typing
-};
 
 function startCounter() {
     const counters = document.querySelectorAll(".counter");
@@ -46,15 +41,19 @@ function resetCounter() {
     setTimeout(startCounter, 500);
 }
 
-// Fungsi untuk menambahkan animasi saat elemen muncul di layar
 function animateOnScroll() {
     const elements = document.querySelectorAll('.animate-on-scroll');
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
+                // Saat elemen masuk ke viewport, tambahkan kelas fade-in dan hapus fade-out
                 entry.target.classList.add('animate-fade-in');
-                observer.unobserve(entry.target); // Hentikan observasi setelah animasi dimulai
+                entry.target.classList.remove('animate-fade-out');
+            } else {
+                // Saat elemen meninggalkan viewport, tambahkan kelas fade-out dan hapus fade-in
+                entry.target.classList.add('animate-fade-out');
+                entry.target.classList.remove('animate-fade-in');
             }
         });
     }, {
@@ -68,8 +67,5 @@ function animateOnScroll() {
 
 // Jalankan fungsi saat halaman dimuat
 window.addEventListener('load', () => {
-    setTimeout(typeEffect, 500);
-    startCounter();
-    setInterval(resetCounter, 5000);
     animateOnScroll();
 });
