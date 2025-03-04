@@ -56,13 +56,13 @@
                     <div class="p-6 transition-transform bg-white rounded-lg shadow-lg product-card dark:bg-gray-800 dark:text-white animate-fadeIn hover:shadow-2xl hover:scale-105" data-category="{{ $materi->kategori }}">
                         <!-- Gambar Materi -->
                         <div class="relative overflow-hidden rounded-lg">
-                            <img src="{{ Str::startsWith($materi->gambar, 'http') ? $materi->gambar : asset('img/' . $materi->gambar) }}" alt="{{ $materi->judul }}" class="object-cover w-full h-48 transition-transform duration-300 rounded-lg hover:scale-110">
+                            <img src="{{ Str::startsWith($materi->gambar, 'http') ? $materi->gambar : asset('img/' . $materi->gambar) }}" alt="{{ $materi->nama }}" class="object-cover w-full h-48 transition-transform duration-300 rounded-lg hover:scale-110">
                             <div class="absolute inset-0 flex items-center justify-center transition-opacity duration-300 bg-black opacity-0 bg-opacity-30 hover:opacity-100">
                                 <a href="{{ route('detail-materi.show', $materi->id) }}" class="px-6 py-2 text-white bg-blue-500 rounded-lg hover:bg-blue-600">Lihat Materi</a>
                             </div>
                         </div>
             
-                        <h2 class="mt-4 text-xl font-semibold text-gray-900 dark:text-white">{{ $materi->nama }}</h2>
+                        <h2 class="mt-4 text-xl font-semibold tracking-tight text-transparent bg-gradient-to-r from-blue-700 to-blue-400 bg-clip-text">{{ $materi->nama }}</h2>
                         <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">{{ Str::limit($materi->deskripsi, 100) }}</p>
             
                         <!-- Rating -->
