@@ -1,7 +1,6 @@
 <div class="py-16 bg-white dark:bg-gray-900 sm:py-32">
     <div class="px-6 mx-auto max-w-7xl lg:px-8">
-        <h2
-            class="mb-12 text-4xl font-semibold text-center text-transparent bg-gradient-to-r from-blue-900 to-blue-400 bg-clip-text animate-on-scroll animate-fade-in">
+        <h2 class="mb-12 text-4xl font-semibold text-center text-transparent bg-gradient-to-r from-blue-900 to-blue-400 bg-clip-text animate-on-scroll animate-fade-in">
             Mitra Kami
         </h2>
 

@@ -8,22 +8,34 @@
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Animasi slide-in kiri */
+/* Animasi slide-in kiri dengan efek spring */
 @keyframes slide-in-left {
     from { opacity: 0; transform: translateX(-100%); }
     to { opacity: 1; transform: translateX(0); }
 }
 
-/* Animasi slide-in kanan */
+/* Animasi slide-in kanan dengan efek spring */
 @keyframes slide-in-right {
     from { opacity: 0; transform: translateX(100%); }
     to { opacity: 1; transform: translateX(0); }
 }
 
-/* Animasi scale-up */
+/* Animasi scale-up dengan efek spring */
 @keyframes scale-up {
     from { transform: scale(0.9); opacity: 0; }
     to { transform: scale(1); opacity: 1; }
+}
+
+/* Animasi spring motion */
+@keyframes spring-motion {
+    0% { transform: scale(0.8) translateY(20px); opacity: 0; }
+    50% { transform: scale(1.1) translateY(-10px); opacity: 1; }
+    100% { transform: scale(1) translateY(0); opacity: 1; }
+}
+@keyframes spring-motion-out {
+    0% { transform: scale(1) translateY(0); opacity: 1; }
+    50% { transform: scale(1.1) translateY(-10px); opacity: 1; }
+    100% { transform: scale(0.8) translateY(20px); opacity: 0; }
 }
 
 /* Animasi blink untuk cursor */
@@ -44,15 +56,19 @@
 }
 
 .animate-slide-in-left {
-    animation: slide-in-left 1s ease-out forwards;
+    animation: slide-in-left 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
 }
 
 .animate-slide-in-right {
-    animation: slide-in-right 1s ease-out forwards;
+    animation: slide-in-right 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
 }
 
 .animate-scale-up {
-    animation: scale-up 0.5s ease-out forwards;
+    animation: scale-up 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+}
+
+.animate-spring-motion {
+    animation: spring-motion 1.8s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
 }
 
 /* Efek hover pada gambar */
@@ -72,37 +88,21 @@
     animation: marquee 10s linear infinite;
 }
 
-/* Animasi Fade In */
-.animate-fade-in {
-    opacity: 0;
-    animation: fade-in 1s ease-in-out forwards;
-}
-
-/* Animasi Slide In */
-.animate-slide-in-left {
-    opacity: 0;
-    animation: slide-in-left 0.8s ease-in-out forwards;
-}
-
-.animate-slide-in-right {
-    opacity: 0;
-    animation: slide-in-right 0.8s ease-in-out forwards;
-}
-
 /* Animasi untuk elemen yang muncul saat scroll */
 .animate-on-scroll {
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    transition: opacity 1.6s ease-out, transform 1.6s ease-out;
 }
 
-.animate-fade-in {
+.animate-on-scroll.animate-fade-in {
     opacity: 1;
     transform: translateY(0);
 }
+.animate-spring-motion-in {
+    animation: spring-motion-in 1.8s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+}
 
-.animate-fade-out {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+.animate-spring-motion-out {
+    animation: spring-motion-out 1.8s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
 }

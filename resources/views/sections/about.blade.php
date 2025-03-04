@@ -7,7 +7,7 @@
         </div>
         <div class="max-w-2xl mx-auto mt-16 sm:mt-20 lg:mt-24 lg:max-w-4xl">
             <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-                <div class="relative pl-16 animate-on-scroll animate-slide-in-left">
+                <div class="relative pl-16 animate-spring-motion">
                     <dt class="font-semibold text-gray-900 dark:text-white text-base/7">
                         <div class="absolute top-0 left-0 flex items-center justify-center bg-blue-600 rounded-lg size-10">
                             <svg class="w-[25px] h-[25px] text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -18,7 +18,7 @@
                     </dt>
                     <dd class="mt-2 text-gray-600 dark:text-gray-300 text-base/7">Belajar kapan saja dan di mana saja melalui smartphone Anda. Platform kami kompatibel dengan perangkat mobile.</dd>
                 </div>
-                <div class="relative pl-16 animate-on-scroll animate-slide-in-right">
+                <div class="relative pl-16 animate-spring-motion" style="animation-delay: 0.2s;">
                     <dt class="font-semibold text-gray-900 text-base/7 dark:text-white">
                         <div class="absolute top-0 left-0 flex items-center justify-center bg-blue-600 rounded-lg size-10">
                             <svg class="w-[25px] h-[25px] text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
@@ -29,7 +29,7 @@
                     </dt>
                     <dd class="mt-2 text-gray-600 dark:text-gray-300 text-base/7">Dibimbing oleh tutor profesional yang berpengalaman di bidangnya. Dapatkan tips dan trik terbaik untuk menguasai materi.</dd>
                 </div>
-                <div class="relative pl-16 animate-on-scroll animate-slide-in-left">
+                <div class="relative pl-16 animate-spring-motion" style="animation-delay: 0.4s;">
                     <dt class="font-semibold text-gray-900 text-base/7 dark:text-white">
                         <div class="absolute top-0 left-0 flex items-center justify-center bg-blue-600 rounded-lg size-10">
                             <svg class="w-6 h-6 text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -40,7 +40,7 @@
                     </dt>
                     <dd class="mt-2 text-gray-600 dark:text-gray-300 text-base/7">Dapatkan e-Sertifikat resmi setelah menyelesaikan kursus. Sertifikat ini dapat digunakan untuk meningkatkan portofolio Anda.</dd>
                 </div>
-                <div class="relative pl-16 animate-on-scroll animate-slide-in-right">
+                <div class="relative pl-16 animate-spring-motion" style="animation-delay: 0.6s;">
                     <dt class="font-semibold text-gray-900 text-base/7 dark:text-white">
                         <div class="absolute top-0 left-0 flex items-center justify-center bg-blue-600 rounded-lg size-10">
                             <svg class="w-6 h-6 text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">

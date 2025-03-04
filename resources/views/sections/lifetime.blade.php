@@ -7,21 +7,21 @@
         </div>
         <div class="max-w-2xl mx-auto mt-10 lg:mx-0 lg:max-w-none">
             <dl class="grid grid-cols-1 gap-8 mt-16 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
-                <div class="flex flex-col-reverse gap-1 animate-fade-in">
+                <div class="flex flex-col-reverse gap-1 animate-on-scroll">
                     <dt class="text-gray-300 text-base/7">Cources Program</dt>
-                    <dd class="text-4xl font-semibold tracking-tight text-white counter" data-target="12">0</dd>
+                    <dd class="text-4xl font-semibold tracking-tight text-white counter" data-target="12">12</dd>
                 </div>
-                <div class="flex flex-col-reverse gap-1 animate-fade-in">
+                <div class="flex flex-col-reverse gap-1 animate-on-scroll">
                     <dt class="text-gray-300 text-base/7">Full-time colleagues</dt>
-                    <dd class="text-4xl font-semibold tracking-tight text-white counter" data-target="300">0</dd>
+                    <dd class="text-4xl font-semibold tracking-tight text-white counter" data-target="300">300</dd>
                 </div>
-                <div class="flex flex-col-reverse gap-1 animate-fade-in">
+                <div class="flex flex-col-reverse gap-1 animate-on-scroll">
                     <dt class="text-gray-300 text-base/7">Hours per week</dt>
-                    <dd class="text-4xl font-semibold tracking-tight text-white counter" data-target="40">0</dd>
+                    <dd class="text-4xl font-semibold tracking-tight text-white counter" data-target="40">40</dd>
                 </div>
-                <div class="flex flex-col-reverse gap-1 animate-fade-in">
+                <div class="flex flex-col-reverse gap-1 animate-on-scroll">
                     <dt class="text-gray-300 text-base/7">Paid time off</dt>
-                    <dd class="text-4xl font-semibold tracking-tight text-white counter" data-target="100">0</dd>
+                    <dd class="text-4xl font-semibold tracking-tight text-white counter" data-target="100">100</dd>
                 </div>
             </dl>
         </div>
