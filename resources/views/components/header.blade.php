@@ -59,7 +59,7 @@
             <div class="hidden lg:flex lg:gap-x-12">
                 <a href="/home" class="font-semibold text-blue-900 dark:text-gray-100 text-sm/6">Beranda</a>
                 <a href="/kegiatan" class="font-semibold text-blue-900 dark:text-gray-100 text-sm/6">Ruang Literasi</a>
-                <a href="/materi" class="font-semibold text-blue-900 dark:text-gray-100 text-sm/6">Materi</a>
+                <a href="/materi" class="font-semibold text-blue-900 dark:text-gray-100 text-sm/6">Daftar Materi</a>
                 <a href="/contact" class="font-semibold text-blue-900 dark:text-gray-100 text-sm/6">Contact</a>
             </div>
             <div class="hidden lg:flex lg:flex-1 lg:justify-end">
