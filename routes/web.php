@@ -16,16 +16,6 @@ Route::get('/home', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
-Route::get('/make-database', function () {
-    $databasePath = storage_path('database.sqlite');
-
-    if (!File::exists($databasePath)) {
-        File::put($databasePath, '');
-        return "Database file created successfully!";
-    }
-
-    return "Database file already exists!";
-});
 
 Route::get('/kegiatan', [ArticleController::class, 'index']);
 

@@ -46,7 +46,7 @@
                             <div class="py-6 space-y-2">
                                 <a href="/home" class="block px-3 py-2 -mx-3 font-semibold text-blue-900 rounded-lg text-base/7 hover:bg-gray-50">Beranda</a>
                                 <a href="/kegiatan" class="block px-3 py-2 -mx-3 font-semibold text-blue-900 rounded-lg text-base/7 hover:bg-gray-50">Ruang Literasi</a>
-                                <a href="/materi" class="block px-3 py-2 -mx-3 font-semibold text-blue-900 rounded-lg text-base/7 hover:bg-gray-50">Materi</a>
+                                <a href="/materi" class="block px-3 py-2 -mx-3 font-semibold text-blue-900 rounded-lg text-base/7 hover:bg-gray-50">Daftar Materi</a>
                                 <a href="/contact" class="block px-3 py-2 -mx-3 font-semibold text-blue-900 rounded-lg text-base/7 hover:bg-gray-50">Contact</a>
                             </div>
                             <div class="py-6">
