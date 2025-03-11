@@ -19,7 +19,7 @@
     @include('sections.support')
     @include('sections.lifetime')
     @include('sections.testimoni')
-    @include('sections.pricing')
+    @include('sections.artikel')
 
     <script src="{{ asset('js/script.js') }}"></script>
     <x-footer></x-footer>
