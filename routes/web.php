@@ -1,9 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\MateriController;
+use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\RekomendasiController;
 
 Route::get('/', function () {
@@ -16,6 +18,19 @@ Route::get('/home', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+Route::get('/login', function () {
+    return view('login'); // Pastikan file ini ada di resources/views/auth/login.blade.php
+})->name('login.form');
+
+Route::post('/login', [LoginController::class, 'login'])->name('login');
+Route::get('/dashboard', function () {
+    return view('home'); // Gantilah dengan halaman dashboard Anda
+})->middleware('auth')->name('home');
+
+
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 
 Route::get('/kegiatan', [ArticleController::class, 'index']);
 
