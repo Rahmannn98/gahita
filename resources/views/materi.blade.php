@@ -25,7 +25,7 @@
     </style>
 </head>
 
-<body class="transition-all duration-300 bg-white dark:bg-gray-900">
+<body class="transition-all duration-300 dark:bg-gray-900">
     <x-header></x-header>
 
     <div class="py-24 bg-white sm:py-32 dark:bg-gray-900">

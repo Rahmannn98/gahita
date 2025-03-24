@@ -10,7 +10,7 @@
     <title>Ruang Literasi</title>
 </head>
 
-<body class="h-full text-gray-900 bg-white dark:bg-gray-900 dark:text-gray-100">
+<body class="h-full text-gray-900 dark:bg-gray-900 dark:text-gray-100">
     <x-header></x-header>
     <div class="py-24 bg-white sm:py-32 dark:bg-gray-900">
         <div class="px-6 mx-auto max-w-7xl lg:px-8">

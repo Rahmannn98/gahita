@@ -1,4 +1,4 @@
-<div class="py-24 bg-white sm:py-32 dark:bg-gray-900">
+<div class="py-24 sm:py-32 dark:bg-gray-900">
     <div class="px-6 mx-auto max-w-7xl lg:px-8">
         <div class="max-w-2xl mx-auto lg:text-center">
             <h2 class="font-semibold text-blue-600 dark:text-blue-400 text-base/7 animate-on-scroll animate-fade-in">Mudah di Pelajari</h2>

@@ -11,7 +11,7 @@ class RekomendasiController extends Controller
     public function index()
     {
         $rekomendasi = Rekomendasi::latest()->paginate(10);
-        return view('rekomendasi.index', compact('rekomendasi'));
+        return view('rekomendasi', compact('rekomendasi'));
     }
 
     // Menampilkan detail rekomendasi dengan artikel terkait
@@ -20,6 +20,6 @@ class RekomendasiController extends Controller
         $article = Rekomendasi::findOrFail($id);
         $relatedArticles = $article->relatedArticles();
 
-        return view('rekomendasi.show', compact('article', 'relatedArticles'));
+        return view('rekomendasi', compact('article', 'relatedArticles'));
     }
 }

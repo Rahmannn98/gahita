@@ -71,7 +71,7 @@
             </div>
             <div>
                 <p class="text-gray-600 dark:text-gray-300">Tari Pendet</p>
-                <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray- 700">
                     <div class="bg-yellow-500 h-2.5 rounded-full" style="width: 50%"></div>
                 </div>
             </div>
@@ -106,10 +106,10 @@
         const courseChart = new Chart(ctx, {
             type: 'bar',
             data: {
-                labels: ['Tari Rejang', 'Tari Pendet', 'Alat Musik Kendang'],
+                labels: ['Kursus Terdaftar', 'Kursus Aktif', 'Kursus Selesai'],
                 datasets: [{
-                    label: 'Progress Kursus',
-                    data: [20, 50, 90],
+                    label: 'Jumlah Kursus',
+                    data: [5, 3, 2],
                     backgroundColor: ['#3b82f6', '#f59e0b', '#10b981'],
                     borderColor: ['#3b82f6', '#f59e0b', '#10b981'],
                     borderWidth: 1
