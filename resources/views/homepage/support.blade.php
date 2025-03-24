@@ -3,7 +3,6 @@
         <h2 class="mb-12 text-4xl font-semibold text-center text-transparent bg-gradient-to-r from-blue-900 to-blue-400 bg-clip-text animate-on-scroll animate-fade-in">
             Mitra Kami
         </h2>
-
         <div class="flex items-center justify-center space-x-10 animate-marquee whitespace-nowrap">
             <div class="flex space-x-10">
                 <div class="relative group animate-on-scroll animate-slide-in-left">
