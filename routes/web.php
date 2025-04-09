@@ -26,6 +26,12 @@ Route::get('/login', function () {
 })->name('login.form');
 
 Route::post('/login', [LoginController::class, 'login'])->name('login');
+
+Route::get('/register', function () {
+    return view('register'); // Pastikan file ini ada di resources/views/auth/register.blade.php
+})->name('register.form');
+Route::post('/register', [LoginController::class, 'register'])->name('register');
+
 Route::get('/dashboard', function () {
     return view('home'); // Gantilah dengan halaman dashboard Anda
 })->middleware('auth')->name('home');

@@ -45,7 +45,6 @@
     <script>
         AOS.init();
     </script>
-
     <x-footer></x-footer>
 </body>
 </html>

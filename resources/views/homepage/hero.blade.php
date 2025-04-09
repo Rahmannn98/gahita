@@ -6,7 +6,7 @@
                 Belajar Budaya Bali lebih Mudah
             </h1>
             <p class="mt-8 text-lg font-medium text-gray-200 sm:text-xl">
-                <span id="typing-text"></span><span id="cursor">|</span>
+                <span>Gahita adalah Platform Pembelajaran Kebudayaan dengan menyediakan konten pembelajaran berupa modul & video yang menarik.</span>
             </p>
         </div>
     </div>
