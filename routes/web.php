@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\MateriController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\ContactController;
@@ -25,16 +26,24 @@ Route::get('/login', function () {
     return view('login'); // Pastikan file ini ada di resources/views/auth/login.blade.php
 })->name('login.form');
 
-Route::post('/login', [LoginController::class, 'login'])->name('login');
 
-Route::get('/register', function () {
-    return view('register'); // Pastikan file ini ada di resources/views/auth/register.blade.php
-})->name('register.form');
-Route::post('/register', [LoginController::class, 'register'])->name('register');
+Route::get('/register', [AuthController::class, 'showRegister'])->name('register');
+Route::post('/register', [AuthController::class, 'register']);
+
+Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
+Route::post('/login', [AuthController::class, 'login']);
 
 Route::get('/dashboard', function () {
     return view('home'); // Gantilah dengan halaman dashboard Anda
 })->middleware('auth')->name('home');
+Route::get('/dashboard', function () {
+    return view('dashboard'); // nanti kamu buat file blade nya
+})->middleware('auth')->name('dashboard');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'index']);
+    Route::post('/profile', [ProfileController::class, 'update']);
+});
 
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 
@@ -58,6 +67,8 @@ Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard
 
 // Route untuk Profile
 Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
+// web.php
+Route::put('/profile/update', [ProfileController::class, 'update'])->name('profile.update');
 
 // Route untuk Kursus Terdaftar
 Route::get('/courses', [CoursesController::class, 'index'])->name('courses');

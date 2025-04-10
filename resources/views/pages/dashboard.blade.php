@@ -2,53 +2,70 @@
 
 @section('content')
     <section id="dashboard" class="grid grid-cols-1 gap-6 md:grid-cols-3" data-aos="fade-up">
-        <!-- Card Kursus Terdaftar -->
-        <div class="p-6 transition-transform duration-300 rounded-lg shadow bg-blue-50 hover:scale-105 dark:bg-blue-900">
+        <div class="col-span-3 mb-4">
+            <h1 class="text-2xl font-semibold text-gray-800 dark:text-white ">Selamat datang {{ Auth::user()->name; }}!</h1>
+        </div>
+        <div class="p-6 transition-transform duration-300 bg-white rounded-lg shadow hover:scale-105 ">
             <div class="flex items-center space-x-4">
                 <div class="p-3 bg-blue-100 rounded-full dark:bg-blue-800">
-                    <!-- Ikon Buku (Kursus Terdaftar) -->
-                    <svg class="w-8 h-8 text-blue-500 dark:text-blue-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
-                    </svg>
+                    <svg class="w-6 h-6 text-blue-500 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M11 4.717c-2.286-.58-4.16-.756-7.045-.71A1.99 1.99 0 0 0 2 6v11c0 1.133.934 2.022 2.044 2.007 2.759-.038 4.5.16 6.956.791V4.717Zm2 15.081c2.456-.631 4.198-.829 6.956-.791A2.013 2.013 0 0 0 22 16.999V6a1.99 1.99 0 0 0-1.955-1.993c-2.885-.046-4.76.13-7.045.71v15.081Z" clip-rule="evenodd"/>
+                    </svg>    
                 </div>
                 <div>
-                    <h2 class="text-lg font-semibold text-blue-800 dark:text-blue-100">Kursus Terdaftar</h2>
-                    <p class="text-2xl font-bold text-blue-900 dark:text-blue-50">5</p>
+                    <h2 class="text-lg font-semibold text-blue-800 dark:text-blue-100">Khursus Terdaftar</h2>
+                    <p class="text-2xl font-bold text-blue-900 dark:text-blue-50">40,689</p>
+                    <div class="flex items-center mt-1 text-sm text-green-600 dark:text-green-400">
+                        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5 10l5-5 5 5H5z" clip-rule="evenodd" />
+                        </svg>
+                        8.5% Up from yesterday
+                    </div>
                 </div>
             </div>
         </div>
-
-        <!-- Card Kursus Aktif -->
-        <div class="p-6 transition-transform duration-300 rounded-lg shadow bg-yellow-50 hover:scale-105 dark:bg-yellow-900">
+    
+        <div class="p-6 transition-transform duration-300 bg-white rounded-lg shadow hover:scale-105 ">
             <div class="flex items-center space-x-4">
                 <div class="p-3 bg-yellow-100 rounded-full dark:bg-yellow-800">
-                    <!-- Ikon Tanda Centang (Kursus Aktif) -->
-                    <svg class="w-8 h-8 text-yellow-500 dark:text-yellow-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                    </svg>
+                    <svg class="w-6 h-6 text-yellow-500 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12.4472 4.10557c-.2815-.14076-.6129-.14076-.8944 0L2.76981 8.49706l9.21949 4.39024L21 8.38195l-8.5528-4.27638Z"/>
+                        <path d="M5 17.2222v-5.448l6.5701 3.1286c.278.1325.6016.1293.8771-.0084L19 11.618v5.6042c0 .2857-.1229.5583-.3364.7481l-.0025.0022-.0041.0036-.0103.009-.0119.0101-.0181.0152c-.024.02-.0562.0462-.0965.0776-.0807.0627-.1942.1465-.3405.2441-.2926.195-.7171.4455-1.2736.6928C15.7905 19.5208 14.1527 20 12 20c-2.15265 0-3.79045-.4792-4.90614-.9751-.5565-.2473-.98098-.4978-1.27356-.6928-.14631-.0976-.2598-.1814-.34049-.2441-.04036-.0314-.07254-.0576-.09656-.0776-.01201-.01-.02198-.0185-.02991-.0253l-.01038-.009-.00404-.0036-.00174-.0015-.0008-.0007s-.00004 0 .00978-.0112l-.00009-.0012-.01043.0117C5.12215 17.7799 5 17.5079 5 17.2222Zm-3-6.8765 2 .9523V17c0 .5523-.44772 1-1 1s-1-.4477-1-1v-6.6543Z"/>
+                      </svg>                      
                 </div>
                 <div>
-                    <h2 class="text-lg font-semibold text-yellow-800 dark:text-yellow-100">Kursus Aktif</h2>
-                    <p class="text-2xl font-bold text-yellow-900 dark:text-yellow-50">3</p>
+                    <h2 class="text-lg font-semibold text-yellow-800 ">Khursus Aktif</h2>
+                    <p class="text-2xl font-bold text-yellow-900 dark:text-yellow-50">10,293</p>
+                    <div class="flex items-center mt-1 text-sm text-green-600 dark:text-green-400">
+                        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5 10l5-5 5 5H5z" clip-rule="evenodd" />
+                        </svg>
+                        1.3% Up from past week
+                    </div>
                 </div>
             </div>
         </div>
-
-        <!-- Card Kursus Selesai -->
-        <div class="p-6 transition-transform duration-300 rounded-lg shadow bg-green-50 hover:scale-105 dark:bg-green-900">
+        <div class="p-6 transition-transform duration-300 bg-white rounded-lg shadow hover:scale-105 ">
             <div class="flex items-center space-x-4">
                 <div class="p-3 bg-green-100 rounded-full dark:bg-green-800">
-                    <!-- Ikon Bendera (Kursus Selesai) -->
+                    <!-- Icon Chart -->
                     <svg class="w-8 h-8 text-green-500 dark:text-green-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3v18h18M9 17l3-3 4 4M13 13l3-3 2 2" />
                     </svg>
                 </div>
                 <div>
-                    <h2 class="text-lg font-semibold text-green-800 dark:text-green-100">Kursus Selesai</h2>
-                    <p class="text-2xl font-bold text-green-900 dark:text-green-50">2</p>
+                    <h2 class="text-lg font-semibold text-green-800 dark:text-green-100">Khursus Selesai</h2>
+                    <p class="text-2xl font-bold text-green-900 dark:text-green-50">1000</p>
+                    <div class="flex items-center mt-1 text-sm text-red-600 dark:text-red-400">
+                        <svg class="w-4 h-4 mr-1 rotate-180" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5 10l5-5 5 5H5z" clip-rule="evenodd" />
+                        </svg>
+                        4.3% Down from yesterday
+                    </div>
                 </div>
             </div>
         </div>
+        
     </section>
 
     <!-- Grafik Statistik Kursus -->
