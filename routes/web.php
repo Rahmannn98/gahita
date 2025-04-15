@@ -75,3 +75,6 @@ Route::get('/courses', [CoursesController::class, 'index'])->name('courses');
 
 // Route untuk Riwayat Pembelian
 Route::get('/history', [HistoryController::class, 'index'])->name('history');
+
+Route::get('/history/{id}', [HistoryController::class, 'show'])->name('detail-history');
+
