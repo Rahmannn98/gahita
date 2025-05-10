@@ -31,7 +31,7 @@ class ProfileController extends Controller
             'name'          => 'required|string|max:255',
             'email'         => 'required|email',
             'phone'         => 'nullable|string|max:20',
-            'photo'         => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048', // Disesuaikan dengan name input di blade
+            'photo'         => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048', 
         ]);
 
         $user->name  = $request->name;
