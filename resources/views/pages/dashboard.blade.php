@@ -4,7 +4,7 @@
 <section id="dashboard" class="grid grid-cols-1 gap-6 md:grid-cols-3" data-aos="fade-up">
     <div class="col-span-3 mb-4">
         <h1 class="text-2xl font-semibold text-gray-800 dark:text-white">
-            Selamat datang {{ Auth::user()->name; }}!
+            Selamat datang {{ Auth::check() ? Auth::user()->name : 'user' }}!
         </h1>
     </div>
 
@@ -162,6 +162,35 @@
         </div>
     </div>
 </section>
+@if(Auth::user()->role === 'admin')
+<section id="admin-tools" class="p-6 mt-6 bg-white rounded-lg shadow dark:bg-gray-800" data-aos="fade-up" data-aos-delay="500">
+    <h2 class="text-xl font-semibold dark:text-white">Dashboard Admin</h2>
+    
+    <div class="grid grid-cols-1 gap-6 mt-4 md:grid-cols-2 lg:grid-cols-3">
+        {{-- Total User --}}
+        <div class="p-4 bg-blue-100 rounded-lg shadow dark:bg-blue-900">
+            <h3 class="text-lg font-semibold text-blue-800 dark:text-blue-100">Total Pengguna</h3>
+            <p class="text-2xl font-bold text-blue-900 dark:text-white">{{ $totalUsers ?? '0' }}</p>
+        </div>
+
+        {{-- Total Kursus --}}
+        <div class="p-4 bg-green-100 rounded-lg shadow dark:bg-green-900">
+            <h3 class="text-lg font-semibold text-green-800 dark:text-green-100">Total Kursus</h3>
+            <p class="text-2xl font-bold text-green-900 dark:text-white">{{ $totalCourses ?? '0' }}</p>
+        </div>
+
+        {{-- Manajemen Konten --}}
+        <div class="p-4 bg-yellow-100 rounded-lg shadow dark:bg-yellow-900">
+            <h3 class="text-lg font-semibold text-yellow-800 dark:text-yellow-100">Aksi Cepat</h3>
+            <a href="{{ route('admin.users.index') }}"
+               class="block mt-2 text-sm text-blue-600 underline hover:text-blue-800">Kelola Pengguna</a>
+            <a href="{{ route('admin.courses.index') }}"
+               class="block mt-1 text-sm text-blue-600 underline hover:text-blue-800">Kelola Kursus</a>
+        </div>
+    </div>
+</section>
+@endif
+
 
 {{-- Script Chart --}}
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

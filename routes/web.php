@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\MateriController;
@@ -9,8 +10,10 @@ use App\Http\Controllers\CoursesController;
 use App\Http\Controllers\HistoryController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\RekomendasiController;
+use App\Http\Controllers\Admin\CourseController;
 
 Route::get('/', function () {
     return view('home');
@@ -78,3 +81,4 @@ Route::get('/history', [HistoryController::class, 'index'])->name('history');
 
 Route::get('/history/{id}', [HistoryController::class, 'show'])->name('detail-history');
 
+Route::get('/admin-dashboard',[DashboardController::class, 'admin'])->name('admin.dashboard')->middleware('admin');
